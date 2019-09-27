@@ -6,4 +6,4 @@ phases:
         commands:
         - npm install
         - npm run build-storybook
-        - aws s3 sync storybook-static s3://storybook-trial-jeremywang  --delete
+        - aws s3 sync storybook-static s3://storybook-trial-jeremywang/$CODEBUILD_BUILD_ID  --delete
